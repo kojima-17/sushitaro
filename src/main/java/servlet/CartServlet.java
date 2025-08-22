@@ -33,7 +33,6 @@ public class CartServlet extends HttpServlet {
 			}
 			CartService service = new CartService(cart); 
 			String action = request.getParameter("action");
-			System.out.println(action);
 			switch(action) {
 			case "add":
 				String addSushiName = request.getParameter("name");
